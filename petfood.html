@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        header {
+            width: 100%;
+            background-color: #fff;
+            color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 14px;
+        }
+
+        h1 {
+            margin: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        i {
+            color: blue;
+        }
+
+        .search-bar-container {
+            display: grid;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            margin-right: 6px;
+            background-color: rgb(191, 191, 247);
+            height: 27px;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            margin-right: 18px;
+        }
+
+        .navigation {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .service-container {
+            display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        }
+
+        .service-container-item {
+        text-align: center;
+        border: 2px solid blue;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+        .service {
+            text-align: center;
+            border: 2px solid blue;
+            padding: 10px;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .service:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: 55%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .service img:hover {
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+        }
+
+        .service-name {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .service-info, .fa-inr {
+            color: black;
+        }
+
+        button{
+            background-color: black;
+            color: white;
+            margin-bottom:10px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-paw"></i>pet</h1>
+        <ul class="navigation">
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="contact">Contact us</a></li>
+            <li><a href="#sponser">Sponser</a></li>
+        </ul>
+        <!-- Search bar -->
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search">
+            <i class="search-icon fas fa-search"></i>
+        </div>
+    </header>
+    <h1>Pet Food we Offer</h1>
+    <div class="service-container">
+        <!-- Dog Food -->
+        <div class="service">
+            <div class="service-name">Dog Food</div>
+            <img src="images\Dog Food.jpg" alt="Dog Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 400</p>
+                <p>Weight: 10kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+        <div class="service">
+            <div class="service-name">Dog Food</div>
+            <img src="images\Dog Food2.jpg" alt="Dog Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 550</p>
+                <p>Weight: 10kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="service">
+            <div class="service-name">Cat Food</div>
+            <img src="images\Cat Food.jpg" alt="Cat Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 350</p>
+                <p>Weight: 5kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+        <div class="service">
+            <div class="service-name">Cat Food</div>
+            <img src="images\Cat Food2.jpg" alt="Cat Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 500</p>
+                <p>Weight: 5kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="service">
+            <div class="service-name">Rabbit Food</div>
+            <img src="images\Rabbit Food.jpg" alt="Rabbit Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 300</p>
+                <p>Weight: 3kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+        <div class="service">
+            <div class="service-name">Rabbit Food</div>
+            <img src="images\Rabbit Food2.jpg" alt="Rabbit Food">
+            <div class="service-info">
+                <p>Price: <i class="fas fa-inr"></i> 600</p>
+                <p>Weight: 3kg</p>
+            </div>
+            <button>Buy</button>
+        </div>
+    </div>
+</body>
+</html>

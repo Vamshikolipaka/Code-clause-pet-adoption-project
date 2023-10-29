@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        header {
+            width: 100%;
+            background-color: #fff;
+            color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 14px;
+        }
+
+        h1 {
+            margin: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        i {
+            color: blue;
+        }
+
+        .search-bar-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            margin-right: 6px;
+            background-color: rgb(191, 191, 247);
+            height: 27px;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            margin-right: 18px;
+        }
+
+        .navigation {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .breed-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .breed {
+            text-align: center;
+            border: 2px solid blue;
+            padding: 10px;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .breed:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .breed img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: 55%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .breed img:hover {
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+        }
+
+        .breed-name {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .breed-info, .fa-inr {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-paw"></i>pet</h1>
+        <ul class="navigation">
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="contact">Contact us</a></li>
+            <li><a href="#sponser">Sponser</a></li>
+        </ul>
+        <!-- Search bar -->
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search">
+            <i class="search-icon fas fa-search"></i>
+        </div>
+    </header>
+    <h1>Welcome to Our <i class="fas fa-paw"></i>Pet Shop</h1>
+    <h1>Dog breed's we Serve</h1>
+    <div class="breed-container">
+        <!-- Dogs -->
+        <div class="breed">
+            <div class="breed-name">Golden Retriever</div>
+            <img src="images\Golden retriever.jpg" alt="Golden Retriever">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 5000</p>
+                <p>Age: 2 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">German Shepherd</div>
+            <img src="images\German shepherd.png" alt="German Shepherd">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 5500</p>
+                <p>Age: 1.5 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Labrador Retriever</div>
+            <img src="images\Labrador retriever.jpg" alt="Labrador Retriever">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 4800</p>
+                <p>Age: 2.5 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Bulldog</div>
+            <img src="images\bulldog.jpg" alt="Bulldog">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 5200</p>
+                <p>Age: 3 years</p>
+            </div>
+        </div>
+    </div>
+    <h1>Cat breed's we Serve</h1>
+    <div class="breed-container">
+        <!-- Cats -->
+        <div class="breed">
+            <div class="breed-name">Siamese Cat</div>
+            <img src="images\Siamese Cat.jpg" alt="Siamese Cat">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 3000</p>
+                <p>Age: 2 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Persian Cat</div>
+            <img src="images\Persian Cat.jpg" alt="Persian Cat">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 3500</p>
+                <p>Age: 1.5 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Maine Coon Cat</div>
+            <img src="images\Maine Coon cat.jpg" alt="Maine Coon Cat">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 3200</p>
+                <p>Age: 2.5 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Scottish Fold Cat</div>
+            <img src="images\Scottish Fold Cat.jpg" alt="Scottish Fold Cat">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 3400</p>
+                <p>Age: 3 years</p>
+            </div>
+        </div>
+    </div>
+    <h1>Rabbit breed's we Serve</h1>
+    <div class="breed-container">
+        <!-- Rabbits -->
+        <div class="breed">
+            <div class="breed-name">Holland Lop Rabbit</div>
+            <img src="images\Hollan Lop Cat.jpg" alt="Holland Lop Rabbit">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 600</p>
+                <p>Age: 1 year</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Flemish Giant Rabbit</div>
+            <img src="images\Flemish Giant Rabbit.jpg" alt="Flemish Giant Rabbit">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 700</p>
+                <p>Age: 1.5 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Rex Rabbit</div>
+            <img src="images\Rex Rabbit.jpg" alt="Rex Rabbit">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 650</p>
+                <p>Age: 2 years</p>
+            </div>
+        </div>
+
+        <div class="breed">
+            <div class="breed-name">Angora Rabbit</div>
+            <img src="images\Angora Rabbit.jpg" alt="Angora Rabbit">
+            <div class="breed-info">
+                <p>Price: <i class="fas fa-inr"></i> 750</p>
+                <p>Age: 1.5 years</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
